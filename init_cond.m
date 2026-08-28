@@ -1,6 +1,6 @@
 M = 5; % mass of the chart kg
 m = 1; % mass of the pendulum kg
-l = 2; % length to pundulum center mass m
+l = 2; % length to pendulum center mass m
 theta0 = 180; % deg
 g = 9.81; % m/s^2
 d = 0.1;
@@ -10,5 +10,5 @@ B = [0; 1/(M*l); 0; 1/M];
 C = [1 0 0 0; 0 0 1 0];
 D = [0; 0];
 
-Q = [0.7164; 1.2793; 0.7659; 2.3542];
-R = [0.0125;0.7620];
+Q = diag([0.7164; 1.2793; 0.7659; 2.3542]);
+R = diag([0.0125;0.7620]);
